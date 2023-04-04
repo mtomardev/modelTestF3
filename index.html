@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NASA's Picture of the Day</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+<!-- image Cuntainer start -->
+<div id="current-image-container">
+    
+</div>
+<!-- image Cuntainer end -->
+
+
+<!-- date container -->
+<div style="border: 2px solid blueviolet; background-color: aquamarine;">
+    <h3 class = "info" >Search for a picture of the day</h3>
+    
+    <form  id="search-form" onsubmit="return false">
+        <input class = "info" type="date" id="myDate" >
+        <button class = "info" type="submit" onclick="getImageOfTheDay()" id="search-input">Search</button>
+
+    </form>
+</div>
+<!-- date container End -->
+
+
+<div id="searchcontainer" >
+    <h4 class = "info" style="background-color: yellow; padding: 5px; border: 2px solid grey; " >Previous Search History</h4>
+    <ul id="search-history">        
+
+    </ul>
+</div>
+
+
+
+<script src="./key.js"></script>
+<script src="./script.js"></script>
+
+</body>
+</html>
